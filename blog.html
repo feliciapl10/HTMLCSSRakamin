@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- ini untuk membuat website dan mobile version responsif -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>University Website Design Easy Tutorials</title>
+    <link rel="stylesheet" href="/style.css">
+
+    <!-- untuk font poppins di header -->
+    <link rel="preconnect" href="https://fonts.googleapis.com"> 
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin> 
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.2.1/css/fontawesome.min.css">
+</head>
+
+<body>
+    <section class="sub-header">
+        <nav>
+            <a href="index.html"><img src="./images/logo.png"></a>
+            <div class="nav-links" id="navLinks">
+                <!-- untuk close button di navigation mobile, dan kalo dipencet hamburger nanti muncul lagi -->
+                <i class="fa fa-times" onclick="hideMenu"></i>
+                <ul>
+                      <!-- yang di dalam href itu adalah kalau dipencet mau diarahkan ke page mana -->
+                      <li><a href="index.html">HOME</a></li>
+                      <li><a href="about.html">ABOUT</a></li>
+                      <li><a href="course.html">COURSE</a></li>
+                      <li><a href="blog.html">BLOG</a></li>
+                      <li><a href="contact.html">CONTACT</a></li>
+                </ul>
+            </div>
+            <!-- hamburger menu di navigation mobile -->
+            <i class="fa fa-bars" onclick="showMenu"></i>
+        </nav>
+        <h1>Our Certificates & Online Programs for 2023</h1>   
+    </section>
+
+<!-- blog page content -->
+<section>
+    <div class="row">
+        <div class="blog-left">
+            <img src="./images/certificate.jpg">
+            <h2>Our Certificates & Online Programs for 2023</h2>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Eaque nemo, deleniti, doloremque vel quae reiciendis, alias cum in beatae enim odit. Necessitatibus amet non similique sequi quibusdam voluptates, iusto quas!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. At exercitationem, incidunt numquam laudantium impedit explicabo velit obcaecati, assumenda nostrum, maxime consequatur voluptatem quos quasi eum laboriosam. Iure harum reiciendis sit!</p>
+            <br>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem labore dolorum inventore quo voluptatibus delectus quia aspernatur, harum perspiciatis amet, a facere obcaecati laudantium sit accusamus? Cumque eaque accusamus tempore!</p>
+            <br>
+            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores ut ab eligendi nesciunt ipsam reprehenderit dicta. Accusamus quibusdam inventore fuga incidunt porro! Libero earum rem sequi vero repellendus voluptatibus saepe.</p>
+            
+            <!-- leave a comment -->
+            <div class="comment-box">
+                <h3>Leave a Comment</h3>
+                <form class="comment-form">
+                    <input type="text" placeholder="Enter Name">
+                    <input type="email" placeholder="Enter Email">
+                    <textarea rows="5" placeholder="Your Comment"></textarea>
+                    <button type="submit" class="hero-btn red-btn">POST COMMENT</button>
+                </form>
+
+            </div>
+        </div>
+
+        <div class="blog-right">
+            <h3>Post Categories</h3>
+            <div>
+                <span>Business Analytics</span>
+                <span>21</span>
+            </div>
+            <div>
+                <span>Data Science</span>
+                <span>28</span>
+            </div>
+            <div>
+                <span>Machine Learning</span>
+                <span>15</span>
+            </div>
+            <div>
+                <span>Computer Science</span>
+                <span>34</span>
+            </div>
+            <div>
+                <span>AutoCAD</span>
+                <span>42</span>
+            </div>
+            <div>
+                <span>Journalism</span>
+                <span>22</span>
+            </div>
+            <div>
+                <span>Commerce</span>
+                <span>30</span>
+            </div>
+            
+        </div>
+
+    </div>
+</section>
+
+ 
+
+<!-- footer -->
+<section class="footer">
+    <h4>About Us</h4>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Hic consequatur eos fugit laborum vero recusandae quo,<br>obcaecati qui repudiandae reprehenderit, cum maxime enim in. Facere earum laudantium provident accusamus sunt.</p>
+
+    <!-- icons sosmed -->
+    <div class="icons">
+        <i class="fa fa-star-facebook"></i>
+        <i class="fa fa-star-twitter"></i>
+        <i class="fa fa-star-instagram"></i>
+        <i class="fa fa-star-linkedin"></i>
+    </div>
+    <p>Made with <i class="fa fa-star-heart-o"></i> by Felicia Prisqilla</p>
+</section>
+
+
+<!-- Javascript for Toggle Menu -->
+<script>
+    var navLinks = document.getElementById("navLinks");
+
+    function showMenu(){
+        navLinks.style.right ="0";
+    }
+
+    function hideMenu(){
+        navLinks.style.right ="-200px";
+    }
+</script>
+
+</body>
+</html>
